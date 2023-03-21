@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h2></h2>
+    <h3></h3>
+<h3>Add Informations:</h3>
+<label for="textInput1">Name: </label>
+<input type="text" id="textInput1" />
+
+<button type="button" onclick="getInputValue1()">
+  Add
+</button>
+<button type="button" onclick="getInputValue2().value = ''">
+  Remove
+</button>
+
+
+<h4></h4>
+<label for="textInput1">Surname: </label>
+<input type="text" id="textInput2" />
+
+<button type="button" onclick="getInputValue3()">
+  Add
+</button>
+<button type="button" onclick="getInputValue4().value = ''">
+    Remove
+</button>
+
+<h5></h5>
+<label for="textInput1">Gmail: </label>
+<input type="text" id="textInput3" />
+
+<button type="button" onclick="getInputValue5()">
+  Add
+</button>
+<button type="button" onclick="getInputValue6().value = ''">
+    Remove
+</button>
+
+
+
+<h3>Informations:</h3>
+<p id="output1"></p>
+<script>
+  function getInputValue1() {
+    let inputValue = $("#textInput1").val();
+    $("#output1").html("Name:" + inputValue);
+  }
+  function getInputValue2() {
+    let inputValue = $("#textInput1").val();
+    $("#output1").html("");
+  }
+</script>
+<p id="output2"></p>
+<script>
+    function getInputValue3() {
+      let inputValue = $("#textInput2").val();
+      $("#output2").html("Surname:" + inputValue);
+    }
+    function getInputValue4() {
+      let inputValue = $("#textInput1").val();
+      $("#output2").html("");
+    }
+  </script>
+  <p id="output3"></p>
+  <script>
+      function getInputValue5() {
+        let inputValue = $("#textInput3").val();
+        $("#output3").html("Gmail:" + inputValue);
+      }
+      function getInputValue6() {
+        let inputValue = $("#textInput3").val();
+        $("#output3").html("");
+      }
+    </script>
+
+</body>
+</html>
